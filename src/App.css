@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,85 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.Container {
+  padding: 5px;
+  margin: 5px;
+  border: black solid;
+  display: flex;
+  flex-direction: row;
+}
+
+.Container table {
+  text-align: left;
+}
+
+.creditCard {
+  height: 160px;
+  width: 300px;
+  margin: 5px;  
+  border-radius: 15px;
+  
+  display: flex;
+  
+  flex-wrap: wrap;
+  border: solid black
+
+}
+
+#ccPicture {
+  margin: 0;
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /* background-color: blue; */
+}
+
+#ccPicture img {
+  height: 35px;
+  width: auto;
+}
+
+#ccNumber {
+  margin: 0;
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  /* text-align: center; */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* background-color: red; */
+
+}
+
+#ccDetails {
+  margin: 0;
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  
+  /* background-color: gold; */
+}
+
+#ccDetailsExp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#ccDetails p {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
 }
