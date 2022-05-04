@@ -1,17 +1,17 @@
-// import masterCard from '../assets/images/master-card.svg'
-// import visaCard from '../assets/images/visa.png'
+import masterCard from '../assets/images/visa.png'
+import visaCard from '../assets/images/visa.png'
 
 function CreditCard (props) {
     console.log(props)
-    let image;
+
     function selectCCImage(type){
         if (type === "Visa") {
             console.log('Visa Image')
-            image = '../assets/images/visa.png'
+            return visaCard
         }
         else if (type === "Master Card"){
             console.log('MasterCard Image')
-            image = '../assets/images/master-card.svg'
+            return masterCard
         }
        
     }
@@ -20,14 +20,14 @@ function CreditCard (props) {
     return (
         <div className="creditCard" style={{backgroundColor:`${props.bgColor}`}}>
             <div id="ccPicture">
-                <img src={image} alt="CCimage" />
+                <img src={() => {selectCCImage(props.type)}} alt="CCimage" />
             </div>
 
-            <div id="ccNumber">
+            <div id="ccNumber" style={{color:`${props.color}`}}>
                 <h3>**** **** **** {props.number.toString().substr(-4)}</h3>
             </div>
 
-            <div id="ccDetails"> 
+            <div id="ccDetails" style={{color:`${props.color}`}}> 
                 <div id="ccDetailsExp">
                     <p>Expires {props.expirationMonth.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false})}/{props.expirationYear.toString().substr(-2)}</p>
                     <p>{props.bank}</p>
@@ -42,4 +42,3 @@ function CreditCard (props) {
 }
 
 export default CreditCard
-// () => selectCCImage(props.type)

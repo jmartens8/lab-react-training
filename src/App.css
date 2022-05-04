@@ -117,3 +117,39 @@ h3 {
   margin: 0;
   padding: 0;
 }
+
+.driverCard {
+  margin: 10px;
+  height: 150px;
+  width: auto;
+  background-color: lightskyblue;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#text {
+  margin: 5px;
+}
+
+#text h2, #text p{
+  margin: 0;
+  padding: 0;
+}
+
+#image {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#image img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
